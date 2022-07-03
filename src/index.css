@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(192, 6, 108), rgb(235, 56, 130), rgb(253, 212, 6));
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-family: 'Arial Rounded mt', cursive;
+}
+
+.board {
+  border: 1rem solid #ffffff;
+  border-radius: 5px;
+  background: #ffffff;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+  position: relative;
+}
+
+.squares {
+  background: #03072a;
+  border: none;
+  font-size: 5rem;
+  cursor: pointer;
+  outline: none;
+}
+.squares:hover{
+  background: #414fce;
+  transition: 1s;
+}
+
+.X {
+  color: rgb(255, 255, 255);
+  font-family: 'Splash', cursive;
+}
+.O {
+  color: rgb(217, 255, 0);
+  font-family: 'Splash', cursive;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-left: 190px;
+}
+#next-player{
+  font-family: 'Arial Rounded mt', cursive;
+  font-weight: bolder;
+  float: right;
+  margin-top: -545px;
+  position: absolute;
+  margin-left: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+
+.info-wrapper button {
+  background: #ffffff;
+  color: rgb(255, 0, 0);
+  border: 1px solid transparent;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+  font-weight: bold;
+  margin-left: 210px;
+}
+.info-wrapper button:hover{
+  background-color: rgb(152, 224, 152);
+  color: rgb(7, 7, 62);
+  transition: 1s;
+}
